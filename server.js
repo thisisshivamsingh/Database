@@ -59,30 +59,65 @@
 
 /////////////// MODAL AND SCHEMA /////////////
 
-const express = require("express");
-const app = express();
-const mongoose = require("mongoose");
+// const express = require("express");
+// const app = express();
+// const mongoose = require("mongoose");
 
-const mongoUri =
-  "mongodb+srv://shivam8976:<password>@cluster0.wmqxy3u.mongodb.net/myApp?retryWrites=true&w=majority";
+// const mongoUri =
+//   "mongodb+srv://shivam8976:<password>@cluster0.wmqxy3u.mongodb.net/myApp?retryWrites=true&w=majority";
 
-mongoose.connect(mongoUri);
+// mongoose.connect(mongoUri);
 
-///////// SCHEMA /////////
+// ///////// SCHEMA /////////
 
-const carSchema = mongoose.Schema({
-  brand: String,
-  model: String,
-  year: Number,
-  avail: Boolean,
-});
+// const carSchema = mongoose.Schema({
+//   brand: String,
+//   model: String,
+//   year: Number,
+//   avail: Boolean,
+// });
 
-const Car = mongoose.model("Car", carSchema);
+// const Car = mongoose.model("Car", carSchema);
 
-/////////////////////////
+// /////////////////////////
 
-const port = process.env.POST || 3001;
-app.listen(port);
+// const port = process.env.POST || 3001;
+// app.listen(port);
 
-/// shivam8976
-/// qWaQmlA0FpAVPArV
+// /// shivam8976
+// /// qWaQmlA0FpAVPArV
+
+/////////////// POSTING /////////////
+
+// const express = require("express");
+// const app = express();
+// const mongoose = require("mongoose");
+// const bodyParser = require("body-parser");
+
+// const mongoUri =
+//   "mongodb+srv://shivam8976:<password>@cluster0.wmqxy3u.mongodb.net/myApp?retryWrites=true&w=majority";
+
+// mongoose.connect(mongoUri);
+
+// ///////// SCHEMA /////////
+
+// const carSchema = mongoose.Schema({
+//   brand: String,
+//   model: String,
+//   year: Number,
+//   avail: Boolean,
+// });
+
+// const Car = mongoose.model("Car", carSchema);
+
+// /////////////////////////
+
+// app.post("/api/addCar", (req, res) => {
+//   console.log(req.body);
+// });
+
+// const port = process.env.POST || 3001;
+// app.listen(port);
+
+// /// shivam8976
+// /// qWaQmlA0FpAVPArV

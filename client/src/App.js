@@ -2,17 +2,22 @@ import { useEffect } from "react";
 import axios from "axios";
 
 const App = () => {
-  const addUser = () => {
+  const onCarSubmit = () => {
     axios
-      .get("/api/users")
+      .post("/api/addCar", {
+        brand: "Ford",
+        model: "Focus",
+        year: 2000,
+        avail: true,
+      })
       .then((response) => {
         console.log(response.data);
-      })
-      .catch((err) => console.log(err));
+      });
   };
   return (
     <div className="app">
-      <button onClick={() => addUser()}>Add user</button>
+      <h1>Add car</h1>
+      <button onClick={() => onCarSubmit()}>Add car to DB</button>
     </div>
   );
 };
